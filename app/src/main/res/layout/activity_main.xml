@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.myweek.demo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.myweek.demo.view.TopBar
+        app:title_text="自定义标题"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:left_btn_bg_color="@drawable/my_clolor_selected"
+        app:left_btn_text="左侧"
+        app:left_btn_text_color="#000000"
+        app:left_btn_text_size="12dp"
+        app:right_btn_bg_color="@drawable/my_clolor_selected"
+        app:right_btn_text="右侧"
+        app:right_btn_text_color="#000000"
+        app:right_btn_text_size="12dp"
+        app:title_bg_color="@color/colorAccent"
+        app:title_text_color="#000000">
 
-</android.support.constraint.ConstraintLayout>
+    </com.myweek.demo.view.TopBar>
+
+</RelativeLayout>
