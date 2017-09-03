@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.myweek.demo.MainActivity">
 
-    <com.myweek.demo.view.TopBar
+    <!--<com.myweek.demo.view.TopBar
         app:title_text="自定义标题"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,12 +15,31 @@
         app:left_btn_text_color="#000000"
         app:left_btn_text_size="12dp"
         app:right_btn_bg_color="@drawable/my_clolor_selected"
-        app:right_btn_text="右侧"
+        app:right_btn_text="更多"
         app:right_btn_text_color="#000000"
         app:right_btn_text_size="12dp"
         app:title_bg_color="@color/colorAccent"
         app:title_text_color="#000000">
 
-    </com.myweek.demo.view.TopBar>
+    </com.myweek.demo.view.TopBar>-->
+    <com.myweek.demo.view.MyView
+        android:id="@+id/myview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_below="@id/myview"
+        android:id="@+id/zidong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自动"/>
+
+    <Button
+        android:layout_toRightOf="@id/zidong"
+        android:layout_below="@id/myview"
+        android:id="@+id/zanting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停"/>
 
 </RelativeLayout>
